@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeff2;
+    min-height: 100vh;
+    color: #333;
+    padding-bottom: 80px;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: #0d6efd;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0a58ca;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.foto-perfil {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: rotate(85deg);
+}
+
+.foto-perfil:hover {
+    transform: rotate(8deg) scale(1.1);
+}
+
+table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+}
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.audio-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 2px solid #0d6efd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 9999;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+.audio-panel span {
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+audio {
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+}
+
+@media (max-width: 576px) {
+    .audio-panel {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    audio {
+        width: 100%;
+    }
+    
+    body {
+        padding-bottom: 140px;
+    }
+
+    .foto-perfil {
+        width: 45px;
+        height: 45px;
+        top: 15px;
+        right: 15px;
+        transform: none;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 50%; 
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1); 
+    background-color: white; 
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); 
+}
+
+.social-icon:hover .bi-linkedin { color: #0077b5; }
+.social-icon:hover .bi-github { color: #333; }
+.social-icon:hover .bi-instagram { color: #e1306c; }
+.social-icon:hover .bi-envelope-fill { color: #c71610; }

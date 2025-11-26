@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción</title>
+    <link rel="stylesheet" href="estiloformulario.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Zona Deportiva</h1>
+        <div>
+            ¡Bienvenido a nuestra página deportiva!
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Exclusiva</a></li>
+                <li><a href="articulos.html">Artículos</a></li>
+                <li><a href="formulario.html">Suscripción</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="suscripcion">
+            <h2>¿Quieres suscribirte a nuestra página web?</h2>
+            <form action="https://formspree.io/f/mnnqzydk" method="POST">
+                <p>¿Estás satisfecho con nuestra página?</p>
+                <label>
+                    <input type="radio" name="satisfaccion" value="si" required> Sí
+                </label>
+                <label>
+                    <input type="radio" name="satisfaccion" value="no" required> No
+                </label>
+                <br><br>
+                <label>
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    Deseo suscribirme al boletín de noticias.
+                </label>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Zona Deportiva - Todos los derechos reservados</p>
+        <p><a href="#contacto">Contacto</a> | <a href="privacidad.html">Política de Privacidad</a></p>
+    </footer>
+
+
+<!-- Video añadido -->
+<video id="video1" width="400" poster="portada.jpg" controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+    <source src="video.webm" type="video/webm">
+</video>
+<button onclick="document.getElementById('video1').play()">Reproducir video</button>
+
+</body>
+</html>

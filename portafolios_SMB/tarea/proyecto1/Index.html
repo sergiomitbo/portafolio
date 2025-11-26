@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Deportiva</title>
+    <link rel="stylesheet" href="estiloindex.css">
+</head>
+<body>
+
+    <header>
+        <h1>Zona Deportiva</h1>
+        
+        <!-- Menú de navegación -->
+        <nav class="barra-articulos">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li> <!-- Enlace a la sección de inicio -->
+                <li><a href="#articulo">Artículos Destacados</a></li> <!-- Enlace a los artículos -->
+                <li><a href="#suscripcion">Suscripción</a></li> <!-- Enlace a la sección de suscripción -->
+                <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+                <li><a href="#politica">Política de Privacidad</a></li> <!-- Enlace a la política -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Sobre Nosotros</h2>
+            <p>Bienvenido a nuestra página, aquí encontrarás información interesante y artículos sobre fútbol.</p>
+        </section>
+
+        <section id="articulo">
+            <h2>Artículos Destacados</h2>
+            <article>
+                <h3>EL Sevilla vuelve a brillar</h3>
+                <p>El Sevilla FC solo piensa en regalar noticias positivas a su afición frente al Real Betis. Los de García Pimienta recibirán al cuadro verdiblanco tras sumar un valioso punto el pasado domingo en San Mamés ante el Athletic Club. Con este duelo, el conjunto nervionense suma ya dos victorias, tres empates y tres derrotas, que lo colocan en treceava posición en la tabla de clasificación de LaLiga con 9 puntos, empatado con el Girona CF. Por su parte, aunque deberá pasar antes por la competición europea, los de Heliópolis visitarán el Sánchez-Pizjuán tras ganar 1-0 ante el Espanyol. Giovani Lo Celso, que lleva ya cinco tantos con la camiseta verdiblanca, volvió a ser el goleador de la noche.</p>
+                <figure>
+                    <img src="https://s1.abcstatics.com/abc/www/multimedia/deportes/2024/10/06/tifo-derbi-sevilla-betis-RkDyGAGpmw5RwHHaOUN7sUK-1200x840@diario_abc.jpeg" alt="Descripción de la imagen">
+                    <figcaption>Imagen relacionada con el tema del artículo</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Contenido Relacionado</h3>
+            <p>Enlaces y contenido adicional que complementan los artículos o el tema principal de la página.</p>
+        </aside>
+
+        <section id="suscripcion">
+            <h2>¿Quieres suscribirte a nuestra página web?</h2>
+            <form action="/submit" method="post">
+                <p>¿Estás satisfecho con nuestra página?</p>
+                <label>
+                    <input type="radio" name="satisfaccion" value="si" required> Sí
+                </label>
+                <label>
+                    <input type="radio" name="satisfaccion" value="no" required> No
+                </label>
+                <br><br>
+
+                <label>
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    Deseo suscribirme al boletín de noticias.
+                </label>
+                <br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Página Web - Todos los derechos reservados</p>
+        <p><a href="#contacto">Contacto</a> | <a href="#politica">Política de Privacidad</a></p>
+    </footer>
+
+</body>
+</html>
+
